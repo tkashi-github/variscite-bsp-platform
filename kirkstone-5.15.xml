@@ -34,5 +34,6 @@
   <project remote="variscite" revision="5664513a0cf0f43afb60f92e63e60a86f3e53bd0" upstream="kirkstone"   name="meta-variscite-sdk"      path="sources/meta-variscite-sdk">
     <linkfile src="scripts/var-setup-release.sh" dest="var-setup-release.sh"/>
   </project>
+  <project remote="tkashi" upstream="main"   name="meta-customimage"      path="sources/meta-customimage"/>
 
 </manifest>
