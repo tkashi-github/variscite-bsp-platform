@@ -16,6 +16,7 @@ $: PATH=${PATH}:~/bin
 $: mkdir ~/var-fslc-yocto
 $: cd ~/var-fslc-yocto
 $: repo init -u https://github.com/varigit/variscite-bsp-platform -b kirkstone -m default.xml
+repo init -u https://github.com/varigit/variscite-bsp-platform.git -b kirkstone -m kirkstone-5.15.xml
 $: repo sync -j4
 
 At the end of the commands you have every metadata you need to start work with.
@@ -29,3 +30,10 @@ $: bitbake core-image-base
 You can use any directory to host your build.
 
 The source code is checked out at `var-fslc-yocto/sources`.
+
+
+----
+$ repo init -u https://github.com/tkashi-github/variscite-bsp-platform -b kirkstone_Custom -m kirkstone-5.15.xml
+$ repo sync -j$(nproc)
+...
+$ MACHINE=imx8mp-var-dart DISTRO=fslc-wayland . var-setup-release.sh build_wayland
