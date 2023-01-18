@@ -9,7 +9,7 @@
   <remote fetch="https://github.com/meta-qt5"      name="QT5"/>
   <remote fetch="https://github.com/sbabic"        name="sbabic"/>
   <remote fetch="https://github.com/varigit"       name="variscite"/>
-  <remote fetch="https://github.com/tkashi-github" name="tkashi"/>
+  <remote fetch="http://b-001852/tkashi" name="tkashi"/>
 
   <project remote="yocto"     revision="24a3f7b3648185e33133f5d96b184a6cb6524f3d" upstream="kirkstone"   name="poky"                    path="sources/poky"/>
   <project remote="yocto"     revision="3747641f1e71d8e4edd5b587b49d09dc2d243942" upstream="kirkstone"   name="meta-freescale"          path="sources/meta-freescale"/>
